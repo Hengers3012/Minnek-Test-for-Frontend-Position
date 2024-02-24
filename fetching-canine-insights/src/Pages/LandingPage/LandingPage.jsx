@@ -23,14 +23,6 @@ export default function LandingPage() {
             </Link>
           </div>
         </section>
-
-        <section className="about-section">
-          <h2>Sobre Nosotros</h2>
-          <p>
-            Somos amantes de los perros, estamos comprometidos a capturar
-            momentos especiales de estos increíbles compañeros.
-          </p>
-        </section>
       </main>
 
       <footer>

@@ -1,0 +1,50 @@
+/* Card.css */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.has-sub-breeds {
+  position: relative;
+}
+
+.sub-breed-indicator {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #4caf50;
+  font-size: 1.5em;
+}
+
+.sub-breeds {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.card:hover .sub-breeds {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-breeds li {
+  padding: 8px;
+  border-top: 1px solid #ccc;
+}
+
+.sub-breeds li:first-child {
+  border-top: none;
+}
