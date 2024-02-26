@@ -1,9 +1,12 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import "./NavBar.css";
 
 export default function NavBar() {
+  const location = useLocation(); // Obtener la ruta actual
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -16,12 +19,20 @@ export default function NavBar() {
         </Link>
       </div>
       <div className="navbar-right">
-        <Link to="/about" className="nav-link">
-          About
-        </Link>
-        <Link to="/contact" className="nav-link">
-          Contact
-        </Link>
+        {location.pathname === "/" ? (
+          <div>
+            <Link to="/about" className="nav-link">
+              About
+            </Link>
+            <Link to="/contact" className="nav-link">
+              Contact
+            </Link>
+          </div>
+        ) : (
+          <Link to="/command-and-conquer" className="nav-link">
+            Command and Conquer
+          </Link>
+        )}
       </div>
     </nav>
   );

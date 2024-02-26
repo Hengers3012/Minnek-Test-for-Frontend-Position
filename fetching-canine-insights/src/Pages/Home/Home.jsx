@@ -11,7 +11,7 @@ export default function Home() {
         const response = await fetch("https://dog.ceo/api/breeds/list/all");
         const data = await response.json();
         setBreedsData(data.message);
-        console.log(data.message); // Log the data for debugging purposes
+        console.log(data.message);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -27,15 +27,13 @@ export default function Home() {
       </header>
 
       <div className="title">
-        <h1>Listado de Perros</h1>
+        <h1>DOG LIST</h1>
       </div>
 
-      <main>
-        <div className="cards-container">
-          {Object.keys(breedsData).map((breed) => (
-            <Card key={breed} breed={breed} subBreeds={breedsData[breed]} />
-          ))}
-        </div>
+      <main className="cards-container">
+        {Object.keys(breedsData).map((breed) => (
+          <Card key={breed} breed={breed} subBreeds={breedsData[breed]} />
+        ))}
       </main>
 
       <footer>

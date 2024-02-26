@@ -6,23 +6,24 @@ import "./LandingPage.css";
 export default function LandingPage() {
   return (
     <div className="landing-page">
-      <header>
+      <header className="header">
         <NavBar />
-        <h1 className="hero">Álbum de Fotos de Perros 🐕✨</h1>
-        <p>¡Explora nuestras adorables fotos de perros!</p>
       </header>
 
-      <main>
-        <section className="hero-section">
-          <div className="hero-content">
-            <h2>Bienvenido a Nuestra App</h2>
-            <p>Descubre la belleza y alegría de nuestros amigos peludos.</p>
+      <main className="main">
+        <div className="hero">
+          <h1>Álbum de Fotos de Perros 🐕✨</h1>
+          <p>¡Explora nuestras adorables fotos de perros!</p>
+        </div>
 
-            <Link to="/home" className="explore-button">
-              Explorar Más
-            </Link>
-          </div>
-        </section>
+        <div className="explore">
+          <h2>Bienvenido a Nuestra App</h2>
+          <p>Descubre la belleza y alegría de nuestros amigos peludos.</p>
+
+          <Link to="/home" className="explore-button">
+            Explorar Más
+          </Link>
+        </div>
       </main>
 
       <footer>

@@ -28,9 +28,10 @@ export default function Card({ breed, subBreeds }) {
   }, [breed]);
 
   const capitalizedBreed = capitalizeFirstLetter(breed);
-  const capitalizedSubBreeds = subBreeds.map((subBreed) =>
-    capitalizeFirstLetter(subBreed)
-  );
+  const capitalizedSubBreeds = subBreeds.map((subBreed, index) => ({
+    name: capitalizeFirstLetter(subBreed),
+    number: index + 1,
+  }));
 
   return (
     <div
@@ -58,11 +59,11 @@ export default function Card({ breed, subBreeds }) {
                 <h1 className="sub-breed-title">Sub-Razas</h1>
               </section>
 
-              <section className="sub-breed-list">
+              <section className="">
                 {hasSubBreeds ? (
-                  <ul>
-                    {capitalizedSubBreeds.map((subBreed, index) => (
-                      <li key={index}>{subBreed}</li>
+                  <ul className="sub-breed-list">
+                    {capitalizedSubBreeds.map(({ name, number }) => (
+                      <li key={number}>{`${number}. ${name}`}</li>
                     ))}
                   </ul>
                 ) : (
