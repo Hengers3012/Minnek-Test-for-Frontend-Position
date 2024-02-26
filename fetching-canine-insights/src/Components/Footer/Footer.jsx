@@ -10,6 +10,7 @@ export default function Footer() {
             &copy; 2024 Fetching Canine Insights. Todos los derechos reservados.
           </p>
         </div>
+
         <div className="footer-right">
           <ul className="footer-links">
             <li>

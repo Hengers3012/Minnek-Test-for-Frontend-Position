@@ -22,3 +22,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ea9010; /* Color del pulgar de la scrollbar */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d0d0d0; /* Color del fondo de la scrollbar */
+}
+
+/* Estilos adicionales para navegadores basados en WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar-button {
+  display: none; /* Oculta los botones de la scrollbar en WebKit */
+}

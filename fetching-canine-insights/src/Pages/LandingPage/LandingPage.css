@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding-bottom: 20px;
   text-align: center;
-  background-color: #303030; /* Color de fondo */
+  background-color: #303030;
   color: #fff;
 }
 
@@ -14,7 +14,8 @@ header {
   margin-bottom: 40px;
 }
 
-h1 {
+.hero {
+  color: #fff;
   font-size: 3em;
   margin-bottom: 10px;
 }
