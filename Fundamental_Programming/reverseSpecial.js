@@ -38,7 +38,7 @@ function reverseWithSpecialChars(arr, specialChars) {
 }
 
 // Ejecutamos la función la entrada y caracteres especiales deseada.
-const input = ['n', 2, 'a', 'l', 9, '$', 'q', 47, 'i', 'a', 'j', 'b', 'z', '&', '%', 8];
+const input = ['n', 2, '&', 'a', 'l', 9, '$', 'q', 47, 'i', 'a', 'j', 'b', 'z', '%', 8];
 const specialChars = ['&', '$', '%'];
 
 const output = reverseWithSpecialChars(input, specialChars);
