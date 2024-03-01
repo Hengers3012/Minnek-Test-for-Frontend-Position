@@ -47,5 +47,5 @@ main {
   gap: 20px;
   padding: 20px;
   overflow-y: auto;
-  max-height: calc(100vh - 60px - 40px - 55px);
+  max-height: calc(100vh - 60px - 40px - 60px);
 }

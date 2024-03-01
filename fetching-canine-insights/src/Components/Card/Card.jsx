@@ -59,11 +59,14 @@ export default function Card({ breed, subBreeds }) {
                 <h1 className="sub-breed-title">Sub-Razas</h1>
               </section>
 
-              <section className="">
+              <section>
                 {hasSubBreeds ? (
                   <ul className="sub-breed-list">
                     {capitalizedSubBreeds.map(({ name, number }) => (
-                      <li key={number}>{`${number}. ${name}`}</li>
+                      <li
+                        className="sub-breed-item"
+                        key={number}
+                      >{`${number}. ${name}`}</li>
                     ))}
                   </ul>
                 ) : (
