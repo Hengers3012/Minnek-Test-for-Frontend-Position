@@ -28,9 +28,13 @@ export default function NavBar() {
               Contact
             </Link>
           </div>
+        ) : location.pathname === "/home" ? (
+          <Link to="/admin" className="nav-link">
+            Manage Dog
+          </Link>
         ) : (
-          <Link to="/command-and-conquer" className="nav-link">
-            Command and Conquer
+          <Link to="/home" className="nav-link">
+            HOME
           </Link>
         )}
       </div>

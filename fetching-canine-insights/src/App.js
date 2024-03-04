@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, LandingPage, About, Contact } from "./Pages";
+import { Home, LandingPage, About, Contact, Admin } from "./Pages";
 import './App.css';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
     </Router>
